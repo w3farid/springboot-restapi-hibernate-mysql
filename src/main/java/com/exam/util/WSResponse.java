@@ -1,5 +1,5 @@
 package com.exam.util;
 
-public class OLResponse {
+public class WSResponse {
 	
 }
