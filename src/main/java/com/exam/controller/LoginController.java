@@ -3,13 +3,8 @@ package com.exam.controller;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,15 +30,15 @@ public class LoginController {
 
 	}
 
-	@GetMapping("/")
-	public String Home() {
-		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-
-		if (!(auth instanceof AnonymousAuthenticationToken)) {
-			String currentUserName = auth.getName();			
-			return currentUserName;
-		}
-		return null;
-	}
+//	@GetMapping("/")
+//	public String Home() {
+//		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+//
+//		if (!(auth instanceof AnonymousAuthenticationToken)) {
+//			String currentUserName = auth.getName();			
+//			return currentUserName;
+//		}
+//		return null;
+//	}
 
 }
