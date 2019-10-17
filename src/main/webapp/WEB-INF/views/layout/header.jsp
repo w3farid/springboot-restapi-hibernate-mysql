@@ -56,9 +56,9 @@
             </a>
           </li>
           <li>
-            <a href="./map.html">
-              <i class="nc-icon nc-pin-3"></i>
-              <p>Maps</p>
+            <a href="/storage">
+              <i class="nc-icon nc-share-66"></i>
+              <p>upload example</p>
             </a>
           </li>
           <li>
